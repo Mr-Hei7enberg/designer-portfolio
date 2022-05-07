@@ -1,0 +1,105 @@
+@import "nullstyle.css";
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9aX8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+}
+html {
+  font-size: 15px;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2b2a2c;
+  -webkit-font-smooth: antialiased;
+  background-color: #fff;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1 1 auto;
+}
+[class*="__container"] {
+  /* 1200px = 1170 + 15px слева и справа */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.intro {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+}
+.header {
+  padding: 1.2rem 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user {
+  display: flex;
+}
+.user img {
+  border-radius: 50%;
+}
+.user__content {
+  padding-left: 9px;
+}
+.user__name {
+  margin-bottom: 3px;
+  font-size: 1.06rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2b2a2c;
+}
+.user__prof {
+  font-size: 0.8rem;
+  color: rgba(43, 42, 44, 0.7);
+}
+.nav {
+  display: flex;
+  height: 100%;
+}
+.nav__link {
+  padding: 0.66rem 2rem;
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+.nav__link:hover,
+.nav__link.active {
+  border-color: #2b2a2c;
+}
