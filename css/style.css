@@ -9,6 +9,13 @@
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf) format('truetype');
@@ -52,11 +59,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-.intro {
-  width: 200px;
-  height: 200px;
-  background-color: #ccc;
 }
 .header {
   padding: 1.2rem 0;
@@ -122,4 +124,78 @@ body {
 .nav__link_btn:hover {
   background-color: #2b2a2c;
   color: #fff;
+}
+.intro__inner {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  position: relative;
+  background: url("../../img/intro/symbols.png") right bottom no-repeat;
+  border-bottom: 1px solid rgba(106, 105, 107, 0.3);
+}
+.intro__content {
+  flex: 0 0 50%;
+}
+.intro__subtitle {
+  margin-bottom: 10px;
+  font-size: 2.13rem;
+  font-weight: 200;
+  color: #2b2a2c;
+}
+.intro__title {
+  margin-bottom: 15px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2b2a2c;
+}
+.intro__text {
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  color: rgba(43, 42, 44, 0.7);
+}
+.intro__photo {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  z-index: 1;
+}
+.social {
+  display: flex;
+  margin-bottom: 42px;
+}
+.social__link {
+  margin-right: 10px;
+  transition: transform 0.2s linear;
+}
+.social__link:hover {
+  transform: translateY(-5px);
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
+  border: 1px solid #6a696b;
+  border-radius: 30px;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.06rem;
+  line-height: 1.1;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: #2b2a2c;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
+  color: #fff;
+}
+.btn + .btn {
+  margin-left: 1rem;
 }

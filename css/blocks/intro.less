@@ -1,8 +1,61 @@
 // main: ../style.less
-.intro {
-    width: 200px;
-    height: 200px;
-    background-color: #ccc;
-}
 
-//sasdasd
+.intro {
+
+    // .intro__container
+
+    &__container {}
+
+    // .intro__inner
+
+    &__inner {
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 120px;
+        position: relative;
+
+        background: url("../../img/intro/symbols.png") right bottom no-repeat;
+        border-bottom: 1px solid rgb(@gray, 30%);
+    }
+
+    // .intro__content
+
+    &__content {
+        flex: 0 0 50%;
+    }
+
+    // .intro__subtitle
+
+    &__subtitle {
+        margin-bottom: 10px;
+        font-size: 2.13rem;
+        font-weight: 200;
+        color: @black;
+    }
+
+    // .intro__title
+
+    &__title {
+        margin-bottom: 15px;
+        font-size: 3rem;
+        font-weight: 700;
+        color: @black;
+    }
+
+    // .intro__text
+
+    &__text {
+        margin-bottom: 25px;
+        font-size: 1.2rem;
+        color: rgb(@black, 70%);
+    }
+
+    // .intro__photo
+
+    &__photo {
+        position: absolute;
+        bottom: -1px;
+        right: 0;
+        z-index: 1;
+    }
+}
