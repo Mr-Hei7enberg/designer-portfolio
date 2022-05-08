@@ -88,18 +88,38 @@ body {
 }
 .nav {
   display: flex;
+  align-items: center;
   height: 100%;
 }
 .nav__link {
-  padding: 0.66rem 2rem;
+  margin-left: 2rem;
+  position: relative;
   font-size: 0.93rem;
   font-weight: 700;
   color: #2b2a2c;
   text-transform: uppercase;
-  border: 2px solid transparent;
-  border-radius: 20px;
 }
-.nav__link:hover,
-.nav__link.active {
-  border-color: #2b2a2c;
+.nav__link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #2b2a2c;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+  transition: width 0.2s linear;
+}
+.nav__link:hover:not(.nav__link_btn)::after {
+  width: 100%;
+}
+.nav__link_btn {
+  padding: 0.66em 2rem;
+  border: 2px solid #2b2a2c;
+  border-radius: 20px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.nav__link_btn:hover {
+  background-color: #2b2a2c;
+  color: #fff;
 }
