@@ -173,10 +173,10 @@ body {
 .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 1.1rem 1.8rem;
+  padding: 1.05em 1.7em;
   min-width: 170px;
   border: 1px solid #6a696b;
-  border-radius: 30px;
+  border-radius: 1.8em;
   background: none;
   cursor: pointer;
   font-family: inherit;
@@ -198,4 +198,70 @@ body {
 }
 .btn + .btn {
   margin-left: 1rem;
+}
+.btn_sm {
+  padding: 0.7em 1.1em;
+  font-size: 0.93rem;
+  font-weight: 700;
+  border-width: 2px;
+}
+.works {
+  padding: 2.8rem;
+}
+.works__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+.works__nav-link {
+  margin: 0 1.2rem;
+  font-size: 0.8rem;
+  color: rgba(43, 42, 44, 0.7);
+}
+.works__nav-link:hover {
+  text-decoration: underline;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem 2.8rem;
+}
+.portfolio__col {
+  flex: 0 0 33.333%;
+  padding: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.work {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.2s linear;
+}
+.work:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.work__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.work__content {
+  padding: 1rem 0.8rem;
+}
+.work__cat {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #2b2a2c;
+  text-transform: uppercase;
+}
+.work__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: #2b2a2c;
+  text-transform: uppercase;
 }
