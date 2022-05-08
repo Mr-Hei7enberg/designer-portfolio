@@ -201,7 +201,8 @@ body {
   margin-left: 1rem;
 }
 .btn_sm {
-  padding: 0.7em 1.1em;
+  padding: 0.7em 1.2em;
+  min-width: 0;
   font-size: 0.93rem;
   font-weight: 700;
   border-width: 2px;
@@ -462,4 +463,56 @@ body {
   color: #6a696b;
   font-weight: 300;
   line-height: 2;
+}
+.footer {
+  padding: 1rem 0;
+  background-color: #2b2a2c;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__credits {
+  display: flex;
+  align-items: center;
+}
+.footer__copyright {
+  padding-right: 0.8rem;
+  margin-right: 1rem;
+  font-size: 0.94rem;
+  color: #8d8d8e;
+  border-right: 1px solid rgba(106, 105, 107, 0.35);
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+.footer__social a {
+  margin-right: 1.2rem;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+  font-size: 0.94rem;
+}
+.footer__nav-link {
+  margin-left: 1.5rem;
+  color: #8d8d8e;
+}
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+.footer__nav-link_btn {
+  padding: 0.5rem 1.4rem;
+  border-radius: 20px;
+  border: 1px solid #8d8d8e;
+  text-transform: uppercase;
+  line-height: 1.1;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+.footer__nav-link_btn:hover {
+  text-decoration: none;
+  background-color: #8d8d8e;
+  border-color: #8d8d8e;
+  color: #2b2a2c;
 }
