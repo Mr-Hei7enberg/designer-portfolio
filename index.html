@@ -52,7 +52,7 @@
                         <a href="#" class="nav__link">About me</a>
                         <a href="#" class="nav__link">Blog</a>
                         <a href="#" class="nav__link">Contact</a>
-                        <a href="#" class="nav__link nav__link_btn">Hire me</a>
+                        <a href="#" class="nav__link nav__link_btn" data-modal="#modal_hire_me">Hire me</a>
                     </nav>
 
                 </div>
@@ -90,8 +90,8 @@
                                 </a>
                             </div>
 
-                            <a href="#" class="btn">Hire me</a>
-                            <button type="button" class="btn">See my resume</button>
+                            <a href="#" class="btn" data-modal="#modal_hire_me">Hire me</a>
+                            <button type="button" class="btn" data-modal="#modal_resume">See my resume</button>
                         </div>
 
                         <img class="intro__photo" src="img/intro/photo.png" alt="">
@@ -103,18 +103,18 @@
                 <div class="works__container">
 
                     <div class="works__nav">
-                        <a href="#" class="works__nav-link">All</a>
-                        <a href="#" class="works__nav-link">App</a>
-                        <a href="#" class="works__nav-link">Websites</a>
-                        <a href="#" class="works__nav-link">Interaction</a>
+                        <a href="#" class="works__nav-link active-link" data-filter="all">All</a>
+                        <a href="#" class="works__nav-link" data-filter="app">App</a>
+                        <a href="#" class="works__nav-link" data-filter="website">Websites</a>
+                        <a href="#" class="works__nav-link" data-filter="interaction">Interaction</a>
                     </div>
 
-                    <div class="portfolio">
-                        <div class="portfolio__col">
-                            <div class="work">
+                    <div class="portfolio" id="portfolio">
+                        <div class="portfolio__col" data-cat="app">
+                            <div class="work" data-modal="#modal_project_1">
                                 <img src="https://dummyimage.com/370x300" alt="Project 1" class="work__image">
                                 <div class="work__content">
-                                    <div class="work__cat">Category</div>
+                                    <div class="work__cat">category: app</div>
                                     <div class="work__title">
                                         Project title
                                         <time class="work__date" datetime="2022-05-08">2022</time>
@@ -123,11 +123,11 @@
                             </div>
                         </div>
 
-                        <div class="portfolio__col">
-                            <div class="work">
+                        <div class="portfolio__col" data-cat="website">
+                            <div class="work" data-modal="#modal_project_1">
                                 <img src="https://dummyimage.com/370x300" alt="Project 1" class="work__image">
                                 <div class="work__content">
-                                    <div class="work__cat">Category</div>
+                                    <div class="work__cat">category: website</div>
                                     <div class="work__title">
                                         Project title
                                         <time class="work__date" datetime="2022-05-08">2022</time>
@@ -136,11 +136,11 @@
                             </div>
                         </div>
 
-                        <div class="portfolio__col">
-                            <div class="work">
+                        <div class="portfolio__col" data-cat="interaction">
+                            <div class="work" data-modal="#modal_project_1">
                                 <img src="https://dummyimage.com/370x300" alt="Project 1" class="work__image">
                                 <div class="work__content">
-                                    <div class="work__cat">Category</div>
+                                    <div class="work__cat">category: interaction</div>
                                     <div class="work__title">
                                         Project title
                                         <time class="work__date" datetime="2022-05-08">2022</time>
@@ -149,11 +149,11 @@
                             </div>
                         </div>
 
-                        <div class="portfolio__col">
-                            <div class="work">
+                        <div class="portfolio__col" data-cat="app">
+                            <div class="work" data-modal="#modal_project_1">
                                 <img src="https://dummyimage.com/370x300" alt="Project 1" class="work__image">
                                 <div class="work__content">
-                                    <div class="work__cat">Category</div>
+                                    <div class="work__cat">category: app</div>
                                     <div class="work__title">
                                         Project title
                                         <time class="work__date" datetime="2022-05-08">2022</time>
@@ -162,11 +162,11 @@
                             </div>
                         </div>
 
-                        <div class="portfolio__col">
-                            <div class="work">
+                        <div class="portfolio__col" data-cat="website">
+                            <div class="work" data-modal="#modal_project_1">
                                 <img src="https://dummyimage.com/370x300" alt="Project 1" class="work__image">
                                 <div class="work__content">
-                                    <div class="work__cat">Category</div>
+                                    <div class="work__cat">category: website</div>
                                     <div class="work__title">
                                         Project title
                                         <time class="work__date" datetime="2022-05-08">2022</time>
@@ -175,11 +175,11 @@
                             </div>
                         </div>
 
-                        <div class="portfolio__col">
-                            <div class="work">
+                        <div class="portfolio__col" data-cat="interaction">
+                            <div class="work" data-modal="#modal_project_1">
                                 <img src="https://dummyimage.com/370x300" alt="Project 1" class="work__image">
                                 <div class="work__content">
-                                    <div class="work__cat">Category</div>
+                                    <div class="work__cat">category: interaction</div>
                                     <div class="work__title">
                                         Project title
                                         <time class="work__date" datetime="2022-05-08">2022</time>
@@ -221,7 +221,7 @@
                                 laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus, eget varius massa mattis
                                 quis. Nunc ultrices urna eu nunc lobortis pulvin velit, in mollis erat nibh in libero.
                             </div>
-                            <a href="#" class="btn">Hire me</a>
+                            <a href="#" class="btn" data-modal="#modal_hire_me">Hire me</a>
                             <button type="button" class="btn">See my resume</button>
                         </div>
 
@@ -382,7 +382,8 @@
                         <a href="#" class="footer__nav-link">About Me</a>
                         <a href="#" class="footer__nav-link">Blog</a>
                         <a href="#" class="footer__nav-link">Contact</a>
-                        <a href="#" class="footer__nav-link footer__nav-link_btn">Hire me</a>
+                        <a href="#" class="footer__nav-link footer__nav-link_btn" data-modal="#modal_hire_me">Hire
+                            me</a>
                     </nav>
                 </div>
 
@@ -392,11 +393,11 @@
 
     <!-- Modals -->
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_project_1">
         <div class="modal__dialog">
 
             <button class="modal__close" type="button">
-                <img class="modal__close-image" src="img/modal/x-circle-fill.svg" alt="close button">
+                <img class="modal__close-image" src="img/modal/x-circle-fill.svg" data-close alt="close button">
             </button>
 
             <div class="modal-work">
@@ -441,11 +442,11 @@
         </div>
     </div>
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_resume">
         <div class="modal__dialog">
 
             <button class="modal__close" type="button">
-                <img class="modal__close-image" src="img/modal/x-circle-fill.svg" alt="close button">
+                <img class="modal__close-image" src="img/modal/x-circle-fill.svg" data-close alt="close button">
             </button>
 
             <div class="modal__content">
@@ -594,18 +595,18 @@
                 </div>
 
                 <div class="text-center">
-                    <a href="#" class="btn">Hire me</a>
+                    <a href="#" class="btn" data-modal="#modal_hire_me">Hire me</a>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_hire_me">
         <div class="modal__dialog modal__dialog_sm">
 
             <button class="modal__close" type="button">
-                <img class="modal__close-image" src="img/modal/x-circle-fill.svg" alt="close button">
+                <img class="modal__close-image" src="img/modal/x-circle-fill.svg" data-close alt="close button">
             </button>
 
 
