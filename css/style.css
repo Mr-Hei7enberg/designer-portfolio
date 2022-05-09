@@ -237,18 +237,7 @@ body.no-scroll {
 }
 .portfolio__col {
   flex: 0 0 33.333%;
-  padding: 0 1rem;
-}
-.text-center {
-  text-align: center;
-}
-.text-right {
-  text-align: right;
-}
-._img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  padding: 1rem;
 }
 .work {
   overflow: hidden;
@@ -548,13 +537,17 @@ body.no-scroll {
 .modal__content {
   padding: 5rem 1rem;
 }
+.modal__subtitle {
+  text-transform: uppercase;
+  font-size: 1.06rem;
+  color: #2b2a2c;
+}
 .modal__title {
   margin-bottom: 3.6rem;
   font-size: 3rem;
   text-transform: uppercase;
   color: #2b2a2c;
   font-weight: 700;
-  text-align: center;
 }
 .modal__close {
   width: 34px;
@@ -575,6 +568,15 @@ body.no-scroll {
 .modal__close-image {
   width: 100%;
   height: 100%;
+}
+.modal__dialog_sm {
+  max-width: 900px;
+}
+.modal__title_mb-0 {
+  margin-bottom: 0;
+}
+.modal__title_mb-3 {
+  margin-bottom: 1rem;
 }
 .modal-work {
   display: flex;
@@ -758,4 +760,77 @@ body.no-scroll {
   height: 100%;
   background-color: #6a696b;
   transition: width 0.2s linear;
+}
+.contact {
+  display: flex;
+  background: url("https://dummyimage.com/477x700") right center no-repeat;
+}
+.contact__info {
+  margin: 2rem 0 3rem;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-weight: 300;
+}
+.contact__info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.contact__info-item:last-child {
+  margin-bottom: 0;
+}
+.contact__info-icon {
+  margin-right: 0.75rem;
+}
+.contact__left {
+  width: 47%;
+  padding: 2rem;
+}
+.form__group {
+  margin-bottom: 1.8rem;
+}
+.form__label {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+.form__input,
+.form__textarea {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #2b2a2c;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  border-radius: 1.8rem;
+  transition: border-color 0.2s linear;
+}
+.form__input:focus,
+.form__textarea:focus {
+  outline: 0;
+  border-color: #546bc5;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #2b2a2c;
+}
+.form__textarea {
+  height: 200px;
+  resize: none;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+._img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
