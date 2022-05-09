@@ -688,7 +688,7 @@ body.no-scroll {
   text-align: right;
   padding-right: 3.2rem;
 }
-.timeline__col_educatione {
+.timeline__col_education {
   padding-left: 3.2rem;
 }
 .timeline__title {
@@ -732,6 +732,7 @@ body.no-scroll {
 .progress-bar {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2.6rem;
 }
 .progress-bar__left {
   min-width: 30%;
