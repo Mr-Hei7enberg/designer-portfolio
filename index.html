@@ -30,7 +30,7 @@
     <title>Designer Portfolio</title>
 </head>
 
-<body>
+<body class="no-scroll">
 
     <div class="wrapper">
         <header class="header">
@@ -59,9 +59,7 @@
             </div>
         </header>
 
-
         <main class="main">
-
             <section class="intro">
                 <div class="intro__container">
                     <div class="intro__inner">
@@ -349,7 +347,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
 
         <footer class="footer">
@@ -391,6 +388,57 @@
 
             </div>
         </footer>
+    </div>
+
+    <!-- Modals -->
+
+    <div class="modal">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button">
+                <img class="modal__close-image" src="img/modal/x-circle-fill.svg" alt="close button">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <img src="https://dummyimage.com/790x780" alt="work preview" class="modal-work__photo">
+                </div>
+
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Project title</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-devider">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Creative Agency</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis excepturi esse nesciunt
+                            odio voluptas ad placeat distinctio, laudantium quos totam quia doloremque vitae et facere
+                            alias nam dolorum qui accusantium.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis excepturi esse nesciunt
+                            odio voluptas ad placeat
+                            distinctio, laudantium quos totam quia doloremque vitae et facere alias nam dolorum qui
+                            accusantium.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn modal-work__btn_prev" type="button">
+                            <img src="img/modal/chevron-left.svg" alt="left"> Previous
+                        </button>
+                        <button class="modal-work__btn modal-work__btn_next" type="button">
+                            Next <img src="img/modal/chevron-right.svg" alt="left">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
