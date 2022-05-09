@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.progress-bar {
+
+    display: flex;
+    flex-direction: column;
+
+    // .progress-bar__left
+
+    &__left {
+        min-width: 30%;
+    }
+
+    // .progress-bar__title
+
+    &__title {
+        font-size: 0.94rem;
+        font-weight: 300;
+    }
+
+    // .progress-bar__right
+
+    &__right {
+        padding-left: 1.2rem;
+    }
+
+    // .progress-bar__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    // .progress-bar__bar
+
+    &__bar {
+        width: 139px;
+        height: 6px;
+        background-color: #efefef;
+    }
+
+    // .progress-bar__progress
+
+    &__progress {
+        height: 100%;
+
+        background-color: @gray;
+
+        transition: width .2s linear;
+    }
+}
