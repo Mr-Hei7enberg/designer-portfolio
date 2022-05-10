@@ -5,10 +5,23 @@
     flex-wrap: wrap;
     margin: 0 -1rem 2.8rem;
 
+    @media @tablet {
+        margin-bottom: 1.5rem;
+    }
+
     // .portfolio__col
 
     &__col {
         flex: 0 0 33.333%;
         padding: 1rem;
+
+
+        @media @mobile {
+            flex: 0 0 50%;
+        }
+
+        @media @mobile-sm {
+            flex: 0 0 100%;
+        }
     }
 }

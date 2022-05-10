@@ -24,6 +24,9 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 
+    <!-- Slick -->
+    <script src="js/slick.min.js" defer></script>
+
     <!-- JS -->
     <script src="js/app.js" defer></script>
 
@@ -55,6 +58,9 @@
                         <a href="#" class="nav__link nav__link_btn" data-modal="#modal_hire_me">Hire me</a>
                     </nav>
 
+                    <div class="burger">
+                        <img class="burger__icon" src="img/header/list.svg" alt="burger">
+                    </div>
                 </div>
             </div>
         </header>
@@ -402,10 +408,18 @@
 
             <div class="modal-work">
                 <div class="modal-work__preview">
-                    <img src="https://dummyimage.com/790x780" alt="work preview" class="modal-work__photo">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="https://dummyimage.com/790x780" alt="work preview" class="modal-work__photo">
+                        </div>
+                        <div>
+                            <img src="https://dummyimage.com/790x780/333" alt="work preview" class="modal-work__photo">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="modal-work__content">
+
                     <div class="modal-work__header">
                         <h3 class="modal-work__title">Project title</h3>
                         <div class="modal-work__info">
@@ -419,20 +433,23 @@
                     </div>
 
                     <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis excepturi esse nesciunt
-                            odio voluptas ad placeat distinctio, laudantium quos totam quia doloremque vitae et facere
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis excepturi esse
+                            nesciunt
+                            odio voluptas ad placeat distinctio, laudantium quos totam quia doloremque vitae et
+                            facere
                             alias nam dolorum qui accusantium.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis excepturi esse nesciunt
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis excepturi esse
+                            nesciunt
                             odio voluptas ad placeat
                             distinctio, laudantium quos totam quia doloremque vitae et facere alias nam dolorum qui
                             accusantium.</p>
                     </div>
 
                     <div class="modal-work__footer">
-                        <button class="modal-work__btn modal-work__btn_prev" type="button">
+                        <button class="modal-work__btn modal-work__btn_prev slickPrev" type="button">
                             <img src="img/modal/chevron-left.svg" alt="left"> Previous
                         </button>
-                        <button class="modal-work__btn modal-work__btn_next" type="button">
+                        <button class="modal-work__btn modal-work__btn_next slickNext" type="button">
                             Next <img src="img/modal/chevron-right.svg" alt="left">
                         </button>
                     </div>
@@ -468,7 +485,8 @@
                             <div class="timeline__text">
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ducimus optio
                                     excepturi, aut voluptatum reprehenderit quidem. Ab quam praesentium eos vitae.
-                                    Voluptatem, facilis. Nihil sunt laboriosam voluptatum voluptas animi. Cumque.</p>
+                                    Voluptatem, facilis. Nihil sunt laboriosam voluptatum voluptas animi. Cumque.
+                                </p>
                             </div>
                         </div>
 
@@ -479,7 +497,8 @@
                             <div class="timeline__text">
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ducimus optio
                                     excepturi, aut voluptatum reprehenderit quidem. Ab quam praesentium eos vitae.
-                                    Voluptatem, facilis. Nihil sunt laboriosam voluptatum voluptas animi. Cumque.</p>
+                                    Voluptatem, facilis. Nihil sunt laboriosam voluptatum voluptas animi. Cumque.
+                                </p>
                             </div>
                         </div>
 
@@ -490,7 +509,8 @@
                             <div class="timeline__text">
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ducimus optio
                                     excepturi, aut voluptatum reprehenderit quidem. Ab quam praesentium eos vitae.
-                                    Voluptatem, facilis. Nihil sunt laboriosam voluptatum voluptas animi. Cumque.</p>
+                                    Voluptatem, facilis. Nihil sunt laboriosam voluptatum voluptas animi. Cumque.
+                                </p>
                             </div>
                         </div>
 
@@ -501,7 +521,8 @@
                             <div class="timeline__text">
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ducimus optio
                                     excepturi, aut voluptatum reprehenderit quidem. Ab quam praesentium eos vitae.
-                                    Voluptatem, facilis. Nihil sunt laboriosam voluptatum voluptas animi. Cumque.</p>
+                                    Voluptatem, facilis. Nihil sunt laboriosam voluptatum voluptas animi. Cumque.
+                                </p>
                             </div>
                         </div>
 
@@ -575,9 +596,11 @@
                             <h5 class="timeline__subtitle">THE BEST APP INTERFACE</h5>
                             <div class="timeline__position">UI/UX Magazine</div>
                             <div class="timeline__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis
+                                    non
                                     tempor ullamcorper. Pellentesque
-                                    cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut condimentum.</p>
+                                    cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut condimentum.
+                                </p>
                             </div>
                         </div>
 
@@ -586,9 +609,11 @@
                             <h5 class="timeline__subtitle">THE BEST WEBSITE</h5>
                             <div class="timeline__position">UI/UX Magazine</div>
                             <div class="timeline__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis non
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis felis
+                                    non
                                     tempor ullamcorper. Pellentesque
-                                    cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut condimentum.</p>
+                                    cursus lectus a pulvinar dapibus. Nullam blandit aliquam ligula ut condimentum.
+                                </p>
                             </div>
                         </div>
                     </div>

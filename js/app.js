@@ -1,7 +1,9 @@
 $(function () {
 
+    let worksSlider = $('[data-slider="slick"]');
 
-    // Add underline to active category
+
+    // Add underline to active category ================
     let activeLink;
     let worksNavLink = $(".works__nav-link");
 
@@ -23,7 +25,7 @@ $(function () {
     });
 
 
-    // Filter category
+    // Filter category =================================
     let filter = $("[data-filter]");
 
     filter.on("click", function (e) {
@@ -45,7 +47,7 @@ $(function () {
     });
 
 
-    // Modal
+    // Modal =========================================
     let modalCall = $("[data-modal]");
     let modalClose = $("[data-close]");
 
@@ -62,6 +64,7 @@ $(function () {
             });
         }, 200);
 
+        worksSlider.slick("setPosition");
     });
 
 
@@ -100,6 +103,30 @@ $(function () {
     });
 
 
+    // Slider https://kenwheeler.github.io/slick/
+    // =========================================
+    worksSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+    });
+
+    // Button prev
+    $(".slickPrev").on("click", function (e) {
+        e.preventDefault();
+        let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
+        currentSlider.slick("slickPrev");
+    });
+
+    // Button next
+    $(".slickNext").on("click", function (e) {
+        e.preventDefault();
+        let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
+        currentSlider.slick("slickNext");
+    });
 
 
 });
