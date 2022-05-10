@@ -60,7 +60,8 @@ $(function () {
 
         setTimeout(function () {
             $(modalId).find(".modal__dialog").css({
-                transform: "scale(1)"
+                transform: "scale(1)",
+                opacity: 1
             });
         }, 200);
 
@@ -73,7 +74,8 @@ $(function () {
         let modalParent = $(this).parents(".modal");
 
         modalParent.find(".modal__dialog").css({
-            transform: "scale(0)"
+            transform: "scale(0)",
+            opacity: "0"
         });
 
         setTimeout(function () {
@@ -87,7 +89,8 @@ $(function () {
     $(".modal").on("click", function () {
         let $this = $(this);
         $this.find(".modal__dialog").css({
-            transform: "scale(0)"
+            transform: "scale(0)",
+            opacity: "0"
         });
 
         setTimeout(function () {

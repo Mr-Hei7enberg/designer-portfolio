@@ -4,12 +4,21 @@
 
     display: flex;
 
+    @media @mobile {
+        flex-direction: column-reverse;
+    }
+
     // .modal-work__preview
 
     &__preview {
         width: 65%;
         position: relative;
         overflow: hidden;
+
+        @media @mobile {
+            width: 100%;
+            overflow: auto;
+        }
     }
 
     // .modal-work__photo
@@ -21,6 +30,13 @@
         z-index: 1;
 
         transform: translate3d(-50%, -50%, 0);
+
+        @media @mobile {
+            position: relative;
+            max-height: auto;
+            width: 100%;
+            transform: translateX(-50%);
+        }
     }
 
     // .modal-work__content
@@ -29,12 +45,25 @@
         width: 35%;
         padding: 3.4rem 6.6rem 1rem 1.73rem;
         position: relative;
+
+        @media @tablet {
+            padding: 3.4rem 1rem 3.4rem 1rem;
+        }
+
+        @media @mobile {
+            width: 100%;
+            padding: 3.4rem 1rem 1rem 1rem;
+        }
     }
 
     // .modal-work__header
 
     &__header {
         margin-bottom: 2.2rem;
+
+        @media @mobile {
+            margin-bottom: 1rem;
+        }
     }
 
     // .modal-work__title
@@ -63,6 +92,10 @@
 
     &__client {
         margin-bottom: 2.2rem;
+
+        @media @mobile {
+            margin-bottom: 1rem;
+        }
     }
 
     // modal-work__client-title
@@ -90,6 +123,14 @@
         color: @gray;
         line-height: 2;
         font-weight: 300;
+
+        @media @tablet {
+            margin-bottom: 2rem;
+        }
+
+        @media @mobile {
+            margin-bottom: 0;
+        }
     }
 
     // .modal-work__footer
@@ -104,12 +145,15 @@
         left: 0;
         z-index: 1;
         width: 100%;
+
+        @media @mobile {
+            display: none;
+        }
     }
 
     // .modal-work__btn
 
     &__btn {
-
         padding: 0;
 
         font-family: inherit;
