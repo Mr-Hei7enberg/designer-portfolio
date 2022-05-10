@@ -3,7 +3,7 @@
 .contact {
 
     display: flex;
-    background: url("https://dummyimage.com/477x700") right center no-repeat;
+    // background: url("https://dummyimage.com/477x700") right center no-repeat;
 
     // .contact__info
 
@@ -13,6 +13,10 @@
         font-size: 0.94rem;
         color: @black;
         font-weight: 300;
+
+        @media @mobile-sm {
+            margin: 1rem 0 1.5rem;
+        }
     }
 
     // .contact__info-item
@@ -38,9 +42,20 @@
     &__left {
         width: 47%;
         padding: 2rem;
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 
     // .contact__right
 
-    &__right {}
+    &__right {
+        width: 53%;
+        background: url("https://dummyimage.com/477x700") right center no-repeat;
+
+        @media @mobile {
+            display: none;
+        }
+    }
 }

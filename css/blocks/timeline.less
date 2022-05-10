@@ -21,6 +21,10 @@
         z-index: 1;
     }
 
+    @media @mobile-sm {
+        margin: 2rem auto;
+    }
+
 
     // .timeline__col
 
@@ -33,12 +37,20 @@
         &_experience {
             text-align: right;
             padding-right: 3.2rem;
+
+            @media @tablet {
+                padding-right: 1.5rem;
+            }
         }
 
         // .timeline__col_educatione
 
         &_education {
             padding-left: 3.2rem;
+
+            @media @tablet {
+                padding-left: 1.5rem;
+            }
         }
     }
 

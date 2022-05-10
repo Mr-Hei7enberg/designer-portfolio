@@ -892,6 +892,16 @@ body.no-scroll {
 .modal__content {
   padding: 5rem 1rem;
 }
+@media (max-width: 991px) {
+  .modal__content {
+    padding: 3rem 1rem;
+  }
+}
+@media (max-width: 565px) {
+  .modal__content {
+    padding: 1.5rem 1rem;
+  }
+}
 .modal__subtitle {
   text-transform: uppercase;
   font-size: 1.06rem;
@@ -903,6 +913,12 @@ body.no-scroll {
   text-transform: uppercase;
   color: #2b2a2c;
   font-weight: 700;
+}
+@media (max-width: 565px) {
+  .modal__title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .modal__close {
   width: 34px;
@@ -1038,6 +1054,11 @@ body.no-scroll {
   left: 50%;
   z-index: 1;
 }
+@media (max-width: 565px) {
+  .timeline {
+    margin: 2rem auto;
+  }
+}
 .timeline__col {
   width: 50%;
 }
@@ -1045,8 +1066,18 @@ body.no-scroll {
   text-align: right;
   padding-right: 3.2rem;
 }
+@media (max-width: 991px) {
+  .timeline__col_experience {
+    padding-right: 1.5rem;
+  }
+}
 .timeline__col_education {
   padding-left: 3.2rem;
+}
+@media (max-width: 991px) {
+  .timeline__col_education {
+    padding-left: 1.5rem;
+  }
 }
 .timeline__title {
   margin-bottom: 2.6rem;
@@ -1087,12 +1118,16 @@ body.no-scroll {
   line-height: 1.5;
 }
 .progress-bar {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin-bottom: 2.6rem;
 }
 .progress-bar__left {
   min-width: 30%;
+}
+@media (max-width: 767px) {
+  .progress-bar__left {
+    min-width: 100%;
+  }
 }
 .progress-bar__title {
   font-size: 0.94rem;
@@ -1101,15 +1136,33 @@ body.no-scroll {
 .progress-bar__right {
   padding-left: 1.2rem;
 }
+@media (max-width: 767px) {
+  .progress-bar__right {
+    min-width: 100%;
+    padding-left: 0;
+    padding-top: 0.5rem;
+  }
+}
 .progress-bar__item {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 767px) {
+  .progress-bar__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .progress-bar__bar {
   width: 139px;
   height: 6px;
   background-color: #efefef;
+}
+@media (max-width: 565px) {
+  .progress-bar__bar {
+    width: auto;
+  }
 }
 .progress-bar__progress {
   height: 100%;
@@ -1118,13 +1171,17 @@ body.no-scroll {
 }
 .contact {
   display: flex;
-  background: url("https://dummyimage.com/477x700") right center no-repeat;
 }
 .contact__info {
   margin: 2rem 0 3rem;
   font-size: 0.94rem;
   color: #2b2a2c;
   font-weight: 300;
+}
+@media (max-width: 565px) {
+  .contact__info {
+    margin: 1rem 0 1.5rem;
+  }
 }
 .contact__info-item {
   display: flex;
@@ -1141,8 +1198,27 @@ body.no-scroll {
   width: 47%;
   padding: 2rem;
 }
+@media (max-width: 767px) {
+  .contact__left {
+    width: 100%;
+  }
+}
+.contact__right {
+  width: 53%;
+  background: url("https://dummyimage.com/477x700") right center no-repeat;
+}
+@media (max-width: 767px) {
+  .contact__right {
+    display: none;
+  }
+}
 .form__group {
   margin-bottom: 1.8rem;
+}
+@media (max-width: 565px) {
+  .form__group {
+    margin-bottom: 1rem;
+  }
 }
 .form__label {
   display: inline-block;
