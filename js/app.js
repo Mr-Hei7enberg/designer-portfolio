@@ -47,7 +47,7 @@ $(function () {
     });
 
 
-    // Modal =========================================
+    // Modal ==========================================
     let modalCall = $("[data-modal]");
     let modalClose = $("[data-close]");
 
@@ -124,12 +124,35 @@ $(function () {
         currentSlider.slick("slickPrev");
     });
 
-    // Button next
+    // Button next 
     $(".slickNext").on("click", function (e) {
         e.preventDefault();
         let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
         currentSlider.slick("slickNext");
     });
 
+
+    // menu =======================================
+    $(".burger").on("click", function () {
+        $(".nav, .burger").toggleClass("active");
+        $("body").toggleClass("no-scroll");
+    });
+
+
+    // Smooth scroll ==============================
+    $("[data-scroll]").on("click", function (e) {
+        e.preventDefault();
+
+        let blockId = $(this).data("scroll");
+        let blockOffset = $(blockId).offset().top - 95;
+
+        $(".nav, .burger").toggleClass("active");
+        $("body").removeClass("no-scroll");
+        // $(this).addClass("active");
+
+        $("html, body").animate({
+            scrollTop: blockOffset
+        }, 500);
+    });
 
 });

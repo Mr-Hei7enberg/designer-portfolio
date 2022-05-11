@@ -3,6 +3,7 @@
 .user {
 
     display: flex;
+    z-index: 2;
 
     img {
         border-radius: 50%;
@@ -14,12 +15,22 @@
 
     // .user__photo
 
-    &__photo {}
+    &__photo {
+
+        @media @mobile {
+            height: 40px;
+        }
+    }
 
     // .user__content
 
     &__content {
         padding-left: 9px;
+
+        @media @mobile {
+            display: flex;
+            align-items: center;
+        }
     }
 
     // .user__name
@@ -30,6 +41,11 @@
         font-weight: 700;
         line-height: 1.2;
         color: @black;
+
+        @media @mobile {
+            border-right: 1px solid @gray-light;
+            padding-right: .7rem;
+        }
     }
 
     // .user__prof
@@ -37,5 +53,9 @@
     &__prof {
         font-size: 0.8rem;
         color: rgb(@black, .7);
+
+        @media @mobile {
+            margin-left: .5rem;
+        }
     }
 }
